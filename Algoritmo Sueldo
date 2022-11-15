@@ -1,0 +1,53 @@
+
+float sbasico;
+float sfinal;
+float comision;
+int nventas; 
+float montoventa;
+int cont=1;
+float a;
+float b;
+float c;
+float d;
+int main()
+
+{
+    printf("Ingrese el sueldo a valorar: \n");
+    scanf("%f",&sbasico);
+    printf("Ingrese el numero total de ventas a analizar: \n");
+    scanf("%i",&nventas);
+    
+    while ((cont<=nventas)){
+        printf("Ingrese el monto total de la venta: ");
+        scanf("%f",&montoventa);
+        comision=(a+b+c+d);
+        cont++;
+        if (montoventa<100){
+            a=0;
+        }else{
+            if ((montoventa>=100)&&(montoventa<=200)){
+                b=0.10*(montoventa);
+            }else{ 
+                if ((montoventa>200)&&(montoventa<=300)){
+                    c=0.12*(montoventa);
+                }else{
+                    if (montoventa>300){
+                        d=0.15*(montoventa);
+                }
+            }
+        }
+    }
+    
+    printf("El valor de todas las comisiones es: \n"), comision;
+}
+}
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
